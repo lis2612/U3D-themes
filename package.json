@@ -7,7 +7,7 @@
     "url": "https://github.com/lis2612/U3D-themes"
   },
   "description": "Dark theme made on U3Dev Team",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "publisher": "U3Dev",
   "author": {
     "name": "Ilya Lyamin",
@@ -43,6 +43,8 @@
   "scripts": {
     "pack": "vsce package",
     "publish": "vsce publish",
-    "add-patch": "npm version patch --no-git-tag-version && git add -A && git commit -m 'Increment patch version' && git push"
+    "add-patch": "npm version patch --no-git-tag-version && git add -A && git commit -m 'Increment patch version to %s' && git push",
+    "add-minor": "npm version minor --no-git-tag-version && git add -A && git commit -m 'Increment minor version to %s' && git push",
+    "add-major": "npm version major --no-git-tag-version && git add -A && git commit -m 'Increment major version to %s' && git push && npm run publish"
   }
 }
