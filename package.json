@@ -1,11 +1,17 @@
 {
-  "name": "U3D-private-theme",
+  "name": "u3d-private-theme",
   "displayName": "U3D Private Theme",
   "icon": "icon.png",
-  "description": "Dark theme made on U3Dev",
-  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lis2612/U3D-themes"
+  },
+  "description": "Dark theme made on U3Dev Team",
+  "version": "0.2.0",
+  "publisher": "U3Dev",
   "author": {
-    "name": "Ilya Lyamin"
+    "name": "Ilya Lyamin",
+    "url": "https://github.com/lis2612"
   },
   "engines": {
     "vscode": "^1.86.0"
@@ -13,13 +19,29 @@
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "U3Dev",
+    "U3D",
+    "U3Dev Theme",
+    "U3D Theme",
+    "Color theme",
+    "Dark theme"
+  ],
   "contributes": {
     "themes": [
       {
         "label": "U3D Private Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/U3D-Private-Theme.json"
+        "path": "./themes/U3D-Private-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.23.0",
+    "vsce": "^2.15.0"
+  },
+  "scripts": {
+    "pack": "vsce package",
+    "publish": "vsce publish"
   }
 }
