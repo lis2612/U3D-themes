@@ -1,0 +1,25 @@
+{
+  "name": "U3D-private-theme",
+  "displayName": "U3D Private Theme",
+  "icon": "icon.png",
+  "description": "Dark theme made on U3Dev",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ilya Lyamin"
+  },
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "U3D Private Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/U3D-Private-Theme.json"
+      }
+    ]
+  }
+}
