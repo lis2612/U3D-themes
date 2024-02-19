@@ -119,10 +119,11 @@
 				"variable",
 				"support.variable",
 				"meta.attribute",
-				"meta.function-call.arguments"
+				"meta.function-call.arguments",
+				"constant.character.format.placeholder.other.python"
 			],
 			"settings": {
-				"foreground": "#69afff",
+				"foreground": "#79b7fd",
 				"fontStyle": ""
 			}
 		},
@@ -134,7 +135,7 @@
 				"support.constant",
 			],
 			"settings": {
-				"foreground": "#69afff6d",
+				"foreground": "#79b7fd92",
 				"fontStyle": "bold"
 			}
 		},
@@ -196,6 +197,18 @@
 			}
 		},
 		{
+			"name": "Template, Script, style Tag Vue",
+			"scope": [
+				"entity.name.tag.template.html.vue",
+				"entity.name.tag.script.html.vue",
+				"entity.name.tag.style.html.vue",
+			],
+			"settings": {
+				"foreground": "#cf6e13",
+				"fontStyle": "bold"
+			}
+		},
+		{
 			"name": "Section",
 			"scope": "entity.name.section",
 			"settings": {
@@ -210,7 +223,7 @@
 				"meta.function-call",
 				"variable.function",
 				"support.function",
-				"keyword.other.special-method"
+				"keyword.other.special-method",
 			],
 			"settings": {
 				"foreground": "#65e7d3",
